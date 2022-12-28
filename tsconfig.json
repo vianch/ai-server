@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "outDir": "./server/dist",
+        "rootDir": "./server",
+        "strict": true,
+        // "baseUrl": "server",
+        "typeRoots": ["./server/types", "node_modules/@types"],
+        "types": ["node", "@types/express"],
+        "esModuleInterop": true,
+        "inlineSourceMap": true,
+        "forceConsistentCasingInFileNames": true,
+        "suppressImplicitAnyIndexErrors": true
+    },
+    "include": ["server/types/**/*", "server/**/*"],
+    "exclude": [
+        "node_modules",
+        "**/*.test.ts",
+        "server/apiDocs",
+        "scripts/migrator",
+        "scripts/**/*",
+        "**/*.test.ts"
+    ]
+}
